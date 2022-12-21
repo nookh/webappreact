@@ -54,7 +54,7 @@ const getProducts = async () => {
 
     const onSendData = useCallback(() => {
         const data = {
-            products: addedItems.id,
+            products: addedItems[0].id,
             totalPrice: getTotalPrice(addedItems),
             queryId,
         }

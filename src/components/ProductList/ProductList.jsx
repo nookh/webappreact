@@ -53,8 +53,14 @@ const getProducts = async () => {
 
 
     const onSendData = useCallback(() => {
+        const customItem = addedItems.map((item) => {
+        delete item.photo
+        return item
+        })
+
+
         const data = {
-            products: addedItems[0].id,
+            products: customItem,
             totalPrice: getTotalPrice(addedItems),
             queryId,
         }

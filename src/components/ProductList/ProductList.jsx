@@ -39,7 +39,7 @@ useEffect(() => {
 // делаем запрос на моунт компоненты
 const getProducts = async () => {
     try {
-        const tt = await fetch(`https://7552-92-37-226-89.ngrok-free.app/api/goods/`);
+        const tt = await fetch(`https://6105-212-19-19-115.ngrok-free.app/api/goods/`);
         const tJson = await tt.json()
 
 

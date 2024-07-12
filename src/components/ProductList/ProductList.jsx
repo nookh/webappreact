@@ -106,6 +106,7 @@ const getProducts = async () => {
                     className={'item'}
                 />
             ))}
+            <Link to="/form">Form</Link>
         </div>
     );
 };

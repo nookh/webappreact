@@ -16,10 +16,10 @@ import axios from "axios"
 //    {id: '8', title: 'Куртка 5', price: 12000, description: 'Зеленого цвета, теплая'},
 //]
 
-//const products = [
-//    {id: '1', title: 'картошка фри', price: 100, description: 'Синего цвета, прямые'},
-//    {id: '2', title: 'Бургер', price: 100, description: 'Зеленого цвета, теплая'},
-//]
+const products = [
+    {id: '1', title: 'картошка фри', price: 100, description: 'Синего цвета, прямые'},
+    {id: '2', title: 'Бургер', price: 100, description: 'Зеленого цвета, теплая'},
+]
 
 const getTotalPrice = (items = []) => {
     return items.reduce((acc, item) => {
@@ -43,7 +43,7 @@ const getProducts = async () => {
         const tJson = await tt.json()
 
 
-        setProducts(tJson);
+        setProducts(products);
     } catch (error) {
         console.log(error);
     }

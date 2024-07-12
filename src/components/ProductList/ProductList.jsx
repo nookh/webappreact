@@ -39,11 +39,11 @@ useEffect(() => {
 // делаем запрос на моунт компоненты
 const getProducts = async () => {
     try {
-        const tt = await fetch(`https://a688-92-37-226-89.ngrok-free.app/api/goods/`);
+        const tt = await fetch(`https://humans.dilmurod.work/tests/products.php`);
         const tJson = await tt.json()
 
 
-        setProducts(products);
+        setProducts(tJson);
     } catch (error) {
         console.log(error);
     }

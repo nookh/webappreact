@@ -4,7 +4,7 @@ import ProductItem from "../ProductItem/ProductItem";
 import {useTelegram} from "../../hooks/useTelegram";
 import {useCallback, useEffect} from "react";
 import axios from "axios"
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //const products = [
 //    {id: '1', title: 'Джинсы', price: 5000, description: 'Синего цвета, прямые'},
@@ -109,7 +109,6 @@ const getProducts = async () => {
             ))}
             <Link to="/form">Form</Link>
         </div>
-        <Outlet />
     );
 };
 

@@ -10,7 +10,7 @@ const Header = () => {
         <div className={'header'}>
             <img className={'image'} src={user?.photo_url} alt="eat"/>
             <span className={'username'}>
-                {user?.username}
+                {user?.username} {user?.photo_url} {user?.first_name}
             </span>
         </div>
     );

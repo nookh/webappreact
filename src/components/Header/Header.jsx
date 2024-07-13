@@ -8,7 +8,7 @@ const Header = () => {
     console.log(user);
     return (
         <div className={'header'}>
-            <Button onClick={onClose}>Закрыть</Button>
+            <img src="{user?.username}" alt="Avatar" style="width:200px">
             <span className={'username'}>
                 {user?.username}
             </span>

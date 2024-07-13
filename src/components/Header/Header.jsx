@@ -8,7 +8,7 @@ const Header = () => {
     console.log(user);
     return (
         <div className={'header'}>
-            <img src="{user?.photo_url}" alt="Avatar" style="width:200px">
+            <img src={user?.photo_url} alt="Avatar" style="width:200px">
             <span className={'username'}>
                 {user?.username}
             </span>
